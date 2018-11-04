@@ -1,0 +1,23 @@
+{
+    "name": "rsvp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "",
+        "url": "git+https://github.com/Pk013/rsvpform.git"
+    },
+    "author": "",
+    "license": "",
+    "bugs": {
+        "url": "https://github.com/Pk013/rsvpform/issues"
+    },
+    "homepage": "https://github.com/Pk013/rsvpForm#readme",
+    "dependencies": {
+        "express": "^4.16.4",
+        "mongoose": "^5.3.8"
+    }
+}

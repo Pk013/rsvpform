@@ -1,0 +1,44 @@
+html
+head
+    title= Document
+link(rel="stylesheet", href="style.css")
+body
+    h1= Document
+    h2= "RSVP"
+
+    form(action="/reply", method="POST", enctype="application/x-www-form-urlencoded", id="RSVP")
+      label(for="fullName") Full Name
+      br
+      input(type="text", name="name", id="fullName")
+      br
+      br
+
+      label(for="email") Email
+      br
+      input(type="email", name="email", id="email")
+      br
+      br
+
+      input(type="radio", name="attend", id="yes" , value='yes', checked)
+      label(for="yes") hell yeah I'm attending!
+      br
+      br
+      
+      input(type="radio", name="attend" id="no" value="no")
+      label(for="no") I can't attend because i am a loser
+      br
+      br
+
+      select( name="numGuests")
+        option(value="0" selected) Number of Guests
+        option(value="0") 0
+        option(value="1") 1
+        option(value="2") 2
+        option(value="3") 3
+        option(value="4") 4
+        option(value="5") 5
+        option(value="6") 6
+      br
+
+      div 
+        button(type="submit") Submit RSVP

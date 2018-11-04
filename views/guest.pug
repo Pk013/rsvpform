@@ -1,0 +1,19 @@
+html
+  head
+    title= Document
+    link(rel="stylesheet", href="style.css")
+  body
+    h1= Document
+
+    h2 Guests Attending
+    each guest in Guests
+      if guest.attending === 'yes'
+        div #{guest.name} with #{guest.guests} guests. Email - #{guest.email}
+
+    br
+    h2 Guests Not Attending
+    each guest in Guests
+      if guest.attending === 'no'
+        div #{guest.name}. Email - #{guest.email}
+
+a(href="/") Link to Home
